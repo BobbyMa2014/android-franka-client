@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LabAs</string>
+    <string name="R1">R1\n1.8kΩ</string>
+    <string name="R2">R5 100Ω</string>
+    <string name="RL">RL 180Ω</string>
+    <string name="Wire">Wire Connect</string>
+    <string name="C1">C1 \n 10nF</string>
+    <string name="C2">C2\n22nF</string>
+    <string name="Reset">Reset</string>
+</resources>

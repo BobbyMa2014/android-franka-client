@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/IP_hint"
+        android:text="IPAddress"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter IP Address"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/IP_type"
+        app:layout_constraintLeft_toRightOf="@id/IP_hint"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/IP_hint"
+        app:layout_constraintBottom_toBottomOf="@id/IP_hint"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/port_hint"
+        android:text="port"
+        app:layout_constraintLeft_toLeftOf="@id/IP_hint"
+        app:layout_constraintTop_toBottomOf="@id/IP_type"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Port"
+        android:id="@+id/port_type"
+        app:layout_constraintLeft_toLeftOf="@id/IP_type"
+        app:layout_constraintRight_toRightOf="@id/IP_type"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/port_hint"
+        app:layout_constraintBottom_toBottomOf="@id/port_hint"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint1_hint"
+        android:text="Joint1"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/port_hint"
+        app:layout_constraintTop_toBottomOf="@id/port_hint"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint1_degree"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Joint1_hint"
+        app:layout_constraintBottom_toBottomOf="@id/Joint1_hint"
+        android:layout_marginRight="50dp"
+        android:text="Degree1"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint1_rad"
+        android:gravity="center"
+        android:inputType="text"
+        app:layout_constraintLeft_toRightOf="@id/Joint1_hint"
+        app:layout_constraintRight_toLeftOf="@id/Joint1_degree"
+        app:layout_constraintTop_toTopOf="@id/Joint1_degree"
+        app:layout_constraintBottom_toBottomOf="@id/Joint1_degree"
+        android:enabled="true"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint2_hint"
+        android:text="Joint2"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/port_hint"
+        app:layout_constraintTop_toBottomOf="@id/Joint1_hint"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint2_degree"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Joint2_hint"
+        app:layout_constraintBottom_toBottomOf="@id/Joint2_hint"
+        android:layout_marginRight="50dp"
+        android:text="Degree2"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint2_rad"
+        android:gravity="center"
+        android:inputType="text"
+        app:layout_constraintLeft_toRightOf="@id/Joint1_hint"
+        app:layout_constraintRight_toLeftOf="@id/Joint1_degree"
+        app:layout_constraintTop_toTopOf="@id/Joint2_degree"
+        app:layout_constraintBottom_toBottomOf="@id/Joint2_degree"
+        android:enabled="true"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint3_hint"
+        android:text="Joint3"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/port_hint"
+        app:layout_constraintTop_toBottomOf="@id/Joint2_hint"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint3_degree"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Joint3_hint"
+        app:layout_constraintBottom_toBottomOf="@id/Joint3_hint"
+        android:layout_marginRight="50dp"
+        android:text="Degree3"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint3_rad"
+        android:gravity="center"
+        android:inputType="text"
+        app:layout_constraintLeft_toRightOf="@id/Joint1_hint"
+        app:layout_constraintRight_toLeftOf="@id/Joint1_degree"
+        app:layout_constraintTop_toTopOf="@id/Joint3_degree"
+        android:enabled="true"
+        app:layout_constraintBottom_toBottomOf="@id/Joint3_degree"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint4_hint"
+        android:text="Joint4"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/port_hint"
+        app:layout_constraintTop_toBottomOf="@id/Joint3_hint"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint4_degree"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Joint4_hint"
+        app:layout_constraintBottom_toBottomOf="@id/Joint4_hint"
+        android:layout_marginRight="50dp"
+        android:text="Degree4"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint4_rad"
+        android:gravity="center"
+        android:inputType="text"
+        app:layout_constraintLeft_toRightOf="@id/Joint1_hint"
+        app:layout_constraintRight_toLeftOf="@id/Joint1_degree"
+        app:layout_constraintTop_toTopOf="@id/Joint4_degree"
+        android:enabled="true"
+        app:layout_constraintBottom_toBottomOf="@id/Joint4_degree"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint5_hint"
+        android:text="Joint5"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/port_hint"
+        app:layout_constraintTop_toBottomOf="@id/Joint4_hint"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint5_degree"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Joint5_hint"
+        app:layout_constraintBottom_toBottomOf="@id/Joint5_hint"
+        android:layout_marginRight="50dp"
+        android:text="Degree5"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint5_rad"
+        android:gravity="center"
+        android:inputType="text"
+        app:layout_constraintLeft_toRightOf="@id/Joint1_hint"
+        app:layout_constraintRight_toLeftOf="@id/Joint1_degree"
+        app:layout_constraintTop_toTopOf="@id/Joint5_degree"
+        app:layout_constraintBottom_toBottomOf="@id/Joint5_degree"
+        android:enabled="true"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint6_hint"
+        android:text="Joint6"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/port_hint"
+        app:layout_constraintTop_toBottomOf="@id/Joint5_hint"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint6_degree"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Joint6_hint"
+        app:layout_constraintBottom_toBottomOf="@id/Joint6_hint"
+        android:layout_marginRight="50dp"
+        android:text="Degree6"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint6_rad"
+        android:gravity="center"
+        android:inputType="text"
+        app:layout_constraintLeft_toRightOf="@id/Joint1_hint"
+        app:layout_constraintRight_toLeftOf="@id/Joint1_degree"
+        app:layout_constraintTop_toTopOf="@id/Joint6_degree"
+        app:layout_constraintBottom_toBottomOf="@id/Joint6_degree"
+        android:enabled="true"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint7_hint"
+        android:text="Joint7"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/port_hint"
+        app:layout_constraintTop_toBottomOf="@id/Joint6_hint"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint7_degree"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Joint7_hint"
+        app:layout_constraintBottom_toBottomOf="@id/Joint7_hint"
+        android:layout_marginRight="50dp"
+        android:text="Degree7"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Joint7_rad"
+        android:gravity="center"
+        android:inputType="text"
+        app:layout_constraintLeft_toRightOf="@id/Joint1_hint"
+        app:layout_constraintRight_toLeftOf="@id/Joint1_degree"
+        app:layout_constraintTop_toTopOf="@id/Joint7_degree"
+        app:layout_constraintBottom_toBottomOf="@id/Joint7_degree"
+        android:enabled="true"
+        android:textSize="15sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send"
+        android:id="@+id/send_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Joint7_hint"
+        android:layout_marginTop="20dp"
+        android:onClick="ConfigureAndSendData"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
